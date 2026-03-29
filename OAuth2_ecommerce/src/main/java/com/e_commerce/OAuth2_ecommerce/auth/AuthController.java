@@ -34,4 +34,8 @@ public class AuthController {
 
         return authService.refreshToken(request, response);
     }
+    @GetMapping("/welcome")
+    public String wel(){
+        return "welcome";
+    }
 }
